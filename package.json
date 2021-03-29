@@ -1,0 +1,31 @@
+{
+    "name": "otel-django-fullstack-poc",
+    "version": "1.0.0",
+    "description": "",
+    "main": "assets/index.js",
+    "dependencies": {
+        "@opentelemetry/api": "^1.0.0-rc.0",
+        "@opentelemetry/context-zone": "^0.18.0",
+        "@opentelemetry/core": "^0.18.0",
+        "@opentelemetry/exporter-collector": "^0.18.0",
+        "@opentelemetry/instrumentation": "^0.18.0",
+        "@opentelemetry/instrumentation-document-load": "^0.14.0",
+        "@opentelemetry/instrumentation-fetch": "^0.18.0",
+        "@opentelemetry/instrumentation-user-interaction": "^0.14.0",
+        "@opentelemetry/instrumentation-xml-http-request": "^0.18.0",
+        "@opentelemetry/tracing": "^0.18.0",
+        "@opentelemetry/web": "^0.18.0",
+        "jquery": "^3.6.0"
+    },
+    "devDependencies": {
+        "webpack": "^5.28.0",
+        "webpack-cli": "^4.5.0"
+    },
+    "scripts": {
+        "build": "webpack --mode development",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

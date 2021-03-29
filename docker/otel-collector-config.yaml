@@ -1,0 +1,25 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+        # cors_allowed_origins:
+        # - http://*
+        # - https://*
+
+exporters:
+  jaeger:
+    endpoint: jaeger:14250
+    insecure: true
+  logging:
+    loglevel: debug
+
+processors:
+  batch:
+
+service:
+  pipelines:
+    traces:
+      receivers: [otlp]
+      exporters: [jaeger, logging]
+      processors: [batch]
