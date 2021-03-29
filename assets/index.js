@@ -71,7 +71,6 @@ function vote(event) {
                 });
             })
             .catch((error) => {
-                console.error(error);
                 span.recordException(error);
             });
     });
